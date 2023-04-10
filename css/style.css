@@ -1,8 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;700&family=Orbitron&display=swap');
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: black;
 }
 main{
     flex-grow: 1;
+}
+p{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
+.textoAzul{
+    text-shadow: 0 0 5px rgb(119, 119, 247),
+    0 0 10px rgb(119, 119, 247),
+    0 0 15px rgb(119, 119, 247),
+    0 0 20px rgb(119, 119, 247),
+    0 0 30px rgb(119, 119, 247),
+    0 0 50px rgb(119, 119, 247),
+    0 0 70px rgb(119, 119, 247),
+    0 0 90px rgb(119, 119, 247),
+    0 0 100px rgb(119, 119, 247);
+}
+.btn{
+    color: white;
+}
+.btnAzul{
+    background: rgb(119, 119, 247);;
+}
+.btnVerde{
+    background-color: rgb(134, 255, 148);
+    color: black
+}
+.btnVioleta{
+    background: #7d17b8;
 }
