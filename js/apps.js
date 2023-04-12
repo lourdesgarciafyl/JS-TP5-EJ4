@@ -31,3 +31,16 @@ parrafoHora.innerHTML = `${hora}: ${minutos}: ${segundos}`
 }
 
 window.setInterval(obtenerFechaYHora, 1000)
+
+function cambiarColor(color){
+    let seccionParrafos = document.getElementById(`seccionParrafos`)
+    seccionParrafos.className = `fs-1 ${color}`
+}
+
+let btnAzul = document.getElementById(`btnAzul`)
+let btnVerde = document.getElementById(`btnVerde`)
+let btnVioleta = document.getElementById(`btnVioleta`)
+
+btnAzul.addEventListener(`click`, () => cambiarColor(`textoAzul`));
+btnVerde.addEventListener(`click`, ()=> cambiarColor(`textoVerde`));
+btnVioleta.addEventListener(`click`, ()=>cambiarColor(`textoVioleta`))
