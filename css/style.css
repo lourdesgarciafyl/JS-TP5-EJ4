@@ -65,3 +65,15 @@ p{
 .btnVioleta{
     background: #7d17b8;
 }
+.btnAzul:hover{
+    border: 1px solid #54a6ef;
+    color: #54a6ef;
+}
+.btnVerde:hover{
+    border: 1px solid #86ff94;
+    color: #86ff94;
+}
+.btnVioleta:hover{
+    border: 1px solid #7d17b8;
+    color: #7d17b8;
+}
