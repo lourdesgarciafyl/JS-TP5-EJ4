@@ -26,8 +26,19 @@ if(segundos < 10){
 if(minutos < 10){
     minutos = `0${minutos}`
 }
-if(hora < 10){
-    hora = `0${hora}`
+
+if(hora >= 12){
+    hora = hora - 12
+    ampm = `PM`
+    if(hora < 10){
+        hora = `0${hora}`
+    }
+} else{
+    ampm = `AM`
+}
+
+if(hora === 0){
+    hora == 12
 }
 
 parrafoHora.innerHTML = `${hora}: ${minutos}: ${segundos} ${ampm}`
