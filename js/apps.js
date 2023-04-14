@@ -9,12 +9,16 @@ let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","
 // console.log(diasSemanas[fechaActual.getDay()])
 
 let parrafoFecha = document.getElementById(`fecha`)
-let parrafoHora = document.getElementById(`hora`)
+let parrafoHora = document.getElementById(`reloj`)
 parrafoFecha.innerHTML = `${diasSemanas[fechaActual.getDay()]} ${fechaActual.getDate()} de ${meses[fechaActual.getMonth()]} del ${fechaActual.getFullYear()}`
 
-let hora = fechaActual.getHours();
-let minutos = fechaActual.getMinutes();
-let segundos = fechaActual.getSeconds();
+let hora = document.getElementById(`horas`);
+hora = fechaActual.getHours();
+let minutos = document.getElementById(`minutos`);
+minutos = fechaActual.getMinutes();
+let segundos = document.getElementById(`segundos`);
+segundos = fechaActual.getSeconds();
+let ampm = document.getElementById(`ampm`)
 
 if(segundos < 10){
     segundos = `0${segundos}`
@@ -26,7 +30,7 @@ if(hora < 10){
     hora = `0${hora}`
 }
 
-parrafoHora.innerHTML = `${hora}: ${minutos}: ${segundos}`
+parrafoHora.innerHTML = `${hora}: ${minutos}: ${segundos} ${ampm}`
 
 }
 

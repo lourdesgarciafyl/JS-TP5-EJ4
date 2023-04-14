@@ -8,10 +8,15 @@ body{
 main{
     flex-grow: 1;
 }
+#reloj{
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+}
 p{
     color: white;
     font-family: 'Orbitron', sans-serif;
 }
+
 .textoAzul{
     text-shadow: 0 0 5px rgb(119, 119, 247),
     0 0 10px rgb(119, 119, 247),
